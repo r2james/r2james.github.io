@@ -1,0 +1,257 @@
+
+  /************** PROJECTS - PANEL 6 **************/
+  .panel6_wrapper {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+}
+  
+.panel6 {
+    height: 200vh;      
+    background-color: #121c2b; 
+    background-size: cover;
+    position: relative;
+}
+
+.panel6-overlap {
+    position: absolute;
+	width: 100%;
+	height: 200vh;
+    top: 0;
+    left: 0;
+    background-color: #f24ec9; 
+    background-size: cover;   
+    clip-path: polygon(0% 4%,100% 12%,100% 100%,0% 100%);
+}
+
+.projects-container  {
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+    background-color: #f24ec9; 
+}
+
+.cartidge-container {
+    margin-bottom: 3vw;
+    filter: drop-shadow(-10px 10px 0px rgb(80, 80, 80));
+}
+
+/** DARK TOP SHADOW OF CATRIDGE **/
+.cartidge-indent {
+    background-color: darkslategrey;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    margin-left: -30px;
+    /* margin-left: 40px; */
+}
+
+.cartidge {
+    position: relative;
+    background-color: rgb(129, 129, 129);
+    height: 300px;
+    width: 330px;
+    clip-path: polygon(91% 78%,100% 78%,100% 0%,33% 0%,33% 8%,17% 8%,17% 0%,0% 0%,0% 78%,10% 78%,10% 100%,91% 100%);
+}
+
+.cartidge-label {
+    background-color: #58c9cb;
+    height: 210px;
+    width: 180px;
+    margin-left: 120px;
+}
+
+.cartidge-label > img {
+    height: 210px;
+    width: 180px;
+    margin-bottom: auto;
+    object-fit:cover;
+}
+
+.cartidge-text {
+    color: white;
+    font-family: DogicaBold;
+	font-size: 25px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    text-transform: uppercase;
+    padding-top: 5px;
+    text-shadow: -3px 3px #000000
+}
+
+/** WHEN YOU HOVER ON CATRIDGE **/
+.cartidge-container:hover {
+    margin-bottom: 2vw;
+    filter: none;
+    margin-top: 1rem;
+    margin-left: -1rem;
+}
+
+.cartidge:hover {
+    border: 1px solid darkslategrey;
+}
+
+
+/*********** GAME MODAL *********/
+.youtube-video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .youtube-video-container::after {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+  }
+  
+  .youtube-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.game-title {
+    margin: 30px;
+    text-align: center;
+    font-family: DogicaBold;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-shadow: -5px 5px #e100ff;
+}
+
+.w3-container {
+    height: 85vh;
+}
+
+.game-title-description {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: DogicaBold;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: -2px 2px #00fff2;
+}
+
+.game-description {
+    padding-bottom: 20px;
+}
+
+.game-images {
+    margin: 5px;
+}
+
+.game-install {
+    padding-bottom: 20px;
+}
+
+.note_shredder {
+    font-size: 20px;
+}
+
+.shooterX {
+    font-size: 20px;
+}
+
+.uprising {
+    font-size: 20px;
+    color: black;
+    text-shadow: -2px 2px #ffd000;
+}
+
+/* .seven_minutes {
+    color: black;
+    font-size: px;
+} */
+/******** MODAL **********/
+.modal-container .modal-container-controls .modal-container-close-button{
+    background-color: red;
+    opacity: 0.7;
+    color: white;
+    border-radius: 25px;
+    padding: 0px;
+    border: 0px;
+}
+
+.modal-container .modal-container-controls .modal-container-close-button:hover{
+    opacity: 1;
+    transform: translate3D(0,-1px,0) scale(1.03);
+    cursor: pointer;
+}
+
+.modal-container .modal-container-content{
+    margin-top: 40px;
+    text-align: justify;
+}
+
+/* Here we define the fixed content */
+/* .modal-container .modal-container-content .modal-container-content-no-scroll{
+    margin-top: 30px;
+} */
+
+/* Here we define the 'scrollable' content */
+.modal-container .modal-container-content .modal-container-content-scroll{
+    position: absolute;
+    width: auto;
+    height: calc(100% - 140px);
+    overflow-y: auto;
+    margin: 0px;
+    padding: 0px 20px 0px 0px;
+}
+
+
+/******** MOBILE VIEW ********/
+/* @media screen and (max-width: 745px) and (orientation: portrait) {
+    .cartidge-container {
+        filter: drop-shadow(-10px 10px 0px rgb(80, 80, 80));
+    }
+    
+    .cartidge-indent {
+        background-color: darkslategrey;
+        width: 200px;
+        height: 50px;
+        position: absolute;
+        margin-left: -30px;
+    }
+    
+    .cartidge {
+
+        position: relative;
+        background-color: rgb(129, 129, 129);
+        width: 300px;
+        height: 200px;
+        clip-path: polygon(0% 30%,100% 30%,100% 0%,33% 0%,33% 8%,17% 8%,17% 0%,0% 0%,0% 0%,0% 30%);
+    }
+    
+    .cartidge-label {
+        background-color: #58c9cb;
+        height: 0;
+        width: 0;
+        margin-left: 80px;
+    }
+    
+    .cartidge-label > img {
+        visibility: hidden;
+        height: 0px;
+        width: 0;
+        margin-bottom: auto;
+        object-fit:cover;
+    }
+    
+    .cartidge-text {
+        color: white;
+        font-family: DogicaBold;
+        font-size: 16px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        text-transform: uppercase;
+        padding-top: 5px;
+        text-shadow: -3px 3px #000000;
+        padding-left: 30px;
+    }
+    
+} */

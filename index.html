@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rafi James Game Designer & Developer</title>
+	<!-- LINK FOR CSS STYLING --->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!-- <link rel="stylesheet" type="text/css" href="rafi_portfolio.css"> -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="whatido.css">
+    <link rel="stylesheet" type="text/css" href="skills.css">
+    <link rel="stylesheet" type="text/css" href="experience.css">
+    <link rel="stylesheet" type="text/css" href="somework.css">
+    <link rel="stylesheet" type="text/css" href="projects.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="professional.css">
+	<!------------------------------ BOOTSTRAP PACKAGES ---------------------------->
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
+    <!-- JQUERY -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<!-- ICONS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- FOR EMOJIS -->
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+	<!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+		/* ADDING CUSTOM FONT */
+		@font-face { font-family: Dogica; src: url('dogica.ttf'); } 
+		@font-face { font-family: DogicaBold; src: url('dogicabold.ttf'); }
+		
+	</style>
+</head>
+<body>
+
+    
+
+
+    <!---------- NAVIGATION BAR ------->
+<div id="nav" class="noBackground">
+    <nav class="inner navbar fixed-bottom">
+            <ul class="">
+                <li><a href="#aboutme">About</a></li>
+                <li><a href="#skillset">Experience</a></li>
+                <li><a href="#work">Projects</a></li>
+                <li><a href="#contactme">Contact</a></li>
+            </ul>
+    </nav>
+</div>
+<!---------- SOCIAL MEDIA------->
+<div id="nav-contact" class="noBackground-social-media">
+    <div class="inner-social-media">
+        <ul>
+            <li class="ghost-move"><img class="ghost1" src="images/ghost1.png"><a href="https://www.facebook.com/rafi.james.94" class="fa fa-facebook"></a></li>
+            <li class="ghost-move"><img class="ghost2" src="images/ghost2.png"><a href="https://twitter.com/RafiJames" class="fa fa-twitter"></a></li>
+            <li class="ghost-move"><img class="ghost3" src="images/ghost3.png"><a href="https://www.linkedin.com/in/rafi-james/" class="fa fa-linkedin"></a></li>
+            <li class="ghost-move"><img class="ghost4" src="images/ghost4.png"><a href="mailto:rafirjames@gmail.com"><i class="glyphicon glyphicon-envelope"></i></a></li>
+        </ul>
+    </div>
+</div>
+<div id="outer-container">
+	<!---------- PANEL #1----------->
+    <div class="name-title">Rafi James</div>
+
+    <div class="wrapper">
+        
+            <video autoplay muted loop id="myVideo">
+                <source src="images/rafi_sample_vid.mp4" type="video/mp4">
+            </video>
+            <div class="panel1"></div>
+        <!-- </div> -->
+        <div class="panel1-overlap"></div>
+    </div>
+
+    <div class="aboutTitle" id="aboutme">About Me.</div>
+    <div class="about-container-all">
+        <div class="about container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-sm d-flex align-items-center">
+                    <p class="about_text mx-auto">
+                        <strong>
+                            I'm a design-minded, Game Designer that has been a part 
+                            of the Game indsutry for 8+ years. Join me on a journey 
+                            through the art I’ve done to the games I’ve created.</strong>
+                            
+                            <br/><br/>
+                            <img class="aboutme-gif" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/af9d19bb-3913-4a54-b357-3828ce713b63/dc55gvb-f83804a2-3e7e-4bcd-aa93-05ab58656570.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FmOWQxOWJiLTM5MTMtNGE1NC1iMzU3LTM4MjhjZTcxM2I2M1wvZGM1NWd2Yi1mODM4MDRhMi0zZTdlLTRiY2QtYWE5My0wNWFiNTg2NTY1NzAuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.H1D_pNq4uT5e7ctd5nVh1jkdeW5owxyf7td6Ensll8M" />
+                            <br/><br/>
+                            
+                        I’m Rafi James and I love games, from board games to videogames. Ever since
+                        I was a kid I’ve been into games, most of my childhood memories are of playing games. 
+                        Also, I have a passion for tech and my curiosity about how things work got me into 
+                        taking everything around me apart. Eventually, I started disassembling the tech that 
+                        I used and modifying it to work better for me. My love of games and modifying tech lead
+                        me down the road of customizing and creating my own games.
+                    </p>
+                    <!-- <p class="about_text">Join me on a journey through the art I’ve done to the games I’ve created.  
+                        I've worked in the Game industry for 8+ years and continue to work on fun and interesting 
+                        projects.  Check out what some of the work I've done and feel free to reach out to me via 
+                        social media regarding collabs or out of curiosity.
+                    </p> -->
+                </div>
+                <div class="col-sm d-flex align-items-center">
+                    <img class="about-photo mx-auto" src="images/Rafi_placeholder.jpg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------- PANEL #2----------->
+    <div class="panel2_wrapper">
+        <div class="panel2"></div>
+        <div class="panel2-overlap"></div>
+    </div>
+    <div class="whatido-title" id="whatido">What I do.</div>
+    <div class="whatido_container container-fluid">
+        <div class="whatido_container-grid">
+            <div class="row">
+                <div class="whatido-col col-sm-12 col-md-6" id="panel2-bx1">
+                    <div class="align-middle">
+                    <div class="whatido-icons first"><i class="em em-game_die" aria-role="presentation" aria-label="GAME DIE" ></i></div>
+                    <div class="panel2_Titles">Game designer</div>
+                    <p>I pursued my Bachelor’s Degree in Game Design from Full Sail University where I was recognized as one of the top students in my program and salutatorian of my graduating class. Upon graduation, I launched into my career as a game designer starting at Fireshark, an indie game studio based in my hometown. As a primary designer at Fireshark, I gained professional experience in building design docs, prototyping, level design and content development. Through this experience, I’ve successfully shipped 3 video games spanning across multiple genres including, battle arena, racing and fighting.</p>
+                    </div>
+                </div>
+                <div class="whatido-col col-sm-12 col-md-6" id="panel2-bx2">
+                    <div class="align-middle">
+                    <div class="whatido-icons"><i class="em em-video_game" aria-role="presentation" aria-label="VIDEO GAME"></i></div>
+                    <div class="panel2_Titles">Game Tester</div>
+                    <p>My game testing experience spans across many facets in the game industry from AAA to indie and volunteering as an alpha/beta tester. In the AAA arena I’ve worked at Nintendo of America as a tester for Fire Emblem: Three Houses, Legend of Zelda: Link’s Awakening and Smash Bros DLC. At Microsoft I was involved in game hardware testing such as stress and compatibility testing the Xbox Series X and S.</p>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="whatido-col col-sm-12 col-md-6" id="panel2-bx3">
+                    <div class="whatido-icons"><i class="em em-computer" aria-role="presentation" aria-label="PERSONAL COMPUTER"></i></div>
+                    <div class="panel2_Titles">Developer</div>
+                    <p>I’ve taken initiative in learning basics of programming across multiple languages such as C#, JavaScript and Python. I’ve applied the concepts I’ve learned in hobby projects by using such devices as a Raspberry Pi and Arduino. In a professional setting at Fireshark Studios I assisted developers with modifying code within Unity.</p>
+                </div>
+                <div class="whatido-col col-sm-12 col-md-6">
+                    <div class="whatido-icons"><i class="em em-hammer_and_wrench" aria-role="presentation" aria-label=""></i></div>
+                    <div class="panel2_Titles">QA Engineer</div>
+                    <p>As a QA Engineer I’ve worked alongside designers and developers to prototype and test game features before being implemented in-game. Oftentimes my feedback about a feature results in an open conversation with designers and developers about what could be improved or different features that could be added to enhance the players’ experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!---------- PANEL #3----------->
+    <div class="panel3_wrapper">
+        <div class="panel3"></div>
+        <div class="panel3-overlap"></div>
+    </div>
+    <div class="skills-title" id="skillset">Skills.</div>
+    <div class="skills_container container-fluid">
+        <div class="skills-grid">
+            <div class="row a">
+               
+                    <div id="panel2-circle-containers">
+                        <div class="row tools-container">
+                            <div class="skills-sub-titles">
+                                <div class="skills-sub-titles">
+                                    <div class="col">
+                                        <i class="fa fa-code fa-2x"></i>
+                                        <span class="development_text">
+                                            Development
+                                        </span>
+                                    </div>
+                                    <div class="col">
+                                        <i class="fa fa-cogs fa-2x"></i>
+                                        <span class="development_text">
+                                            Tools
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+<div class="row arcade_btn_holder">
+    <div class="col-3 ignore">
+        <img src="images/joystick.png" class="joystick">
+    </div>
+    <div class="col-9">
+        <div class="col-md-3 col-sm-6">
+            <div class="circle a justify-content-center d-flex">
+                <span class="tooltiptext">Unity</span>
+                <div class="inner-circle a">
+                    <div class="circle-shine-big"></div>
+                    <div class="circle-shine-sm"></div>
+                    <a href="https://unity.com/">
+                        <img src="./images/logos/unity.png" alt="unity logo" class="unity logo-image"/>
+                    </a>
+                </div>
+            </div>
+            UNITY
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="circle b">
+                <span class="tooltiptext">Photoshop</span>
+                <div class="inner-circle b">
+                    <div class="circle-shine-big"></div>
+                    <div class="circle-shine-sm"></div>
+                    <a href="https://www.adobe.com/products/photoshop/">
+                        <img src="./images/logos/photoshop.png" alt="photoshop logo" class="photoshop logo-image"/>
+                    </a>
+                </div>
+            </div>
+            PHOTOSHOP
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="circle c">
+                <span class="tooltiptext">3DS Max</span>
+                <div class="inner-circle c">
+                    <div class="circle-shine-big"></div>
+                    <div class="circle-shine-sm"></div>
+                    <a href="https://www.autodesk.com/products/3ds-max/overview?term=1-YEAR&support=null">
+                        <img src="./images/logos/3ds_max.png" alt="3ds Max logo" class="three_ds logo-image" />
+                    </a>
+                </div>
+            </div>
+            3DS MAX
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="circle d">
+                <span class="tooltiptext">GameMaker Studio</span>
+                <div class="inner-circle d" >
+                    <div class="circle-shine-big"></div>
+                    <div class="circle-shine-sm"></div>
+                    <a href="https://www.yoyogames.com/gamemaker">
+                        <img src="./images/logos/gamemaker_studio.png" alt="GameMaker Studio logo" class="gamemaker logo-image"/>
+                    </a>
+                </div>
+            </div>
+            GAMEMAKER STUDIO
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="circle e">
+                <span class="tooltiptext">TortoiseSVN</span>
+                <div class="inner-circle e">
+                    <div class="circle-shine-big"></div>
+                    <div class="circle-shine-sm"></div>
+                    <a href="https://perlenspiel.net/">
+                        <img src="./images/logos/tortoiseSVN_logo.png" alt="TortoiseSVN logo" class="tortoise logo-image"/>
+                    </a>
+                </div>
+            </div>
+            TORTOISE SVN
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="circle f">
+                <span class="tooltiptext">Unreal Engine</span>
+                <div class="inner-circle f"> 
+                    <div class="circle-shine-big"></div>
+                    <div class="circle-shine-sm"></div>
+                    <a href="https://www.unrealengine.com/en-US/">
+                        <img src="./images/logos/unreal.png" alt="Unreal logo" class="unreal logo-image" />
+                    </a>
+                </div>
+            </div>
+            UNREAL
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="circle d">
+                <span class="tooltiptext">C#</span>
+                <div class="inner-circle d">
+                    <div class="circle-shine-big"></div>
+                    <div class="circle-shine-sm"></div>
+                    <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">
+                        <img src="./images/logos/csharp.png" alt="csharp logo" class="csharp logo-image"/>
+                    </a>
+                </div>
+            </div>
+            C#
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="circle g">
+                <span class="tooltiptext">Aesprite</span>
+                <div class="inner-circle g">
+                    <div class="circle-shine-big"></div>
+                    <div class="circle-shine-sm"></div>
+                    <a href="https://www.aseprite.org/">
+                        <img src="./images/logos/aesprite_logo.png" alt="Aesprite logo" class="aepsirte logo-image"/>
+                    </a>
+                </div>
+            </div>
+            Aesprite
+        </div>
+    </div>
+</div>
+
+    <div class="container-fluid small_arcade_btn_holder">
+        <div class="row ">
+            <div class="col justify-content-center d-flex">
+                <div class="dev_button_outer justify-content-center d-flex a">
+                    <div class="dev_button_inner align-middle a">
+                        UNITY
+                    </div>
+                </div>
+            </div>
+            <div class="col justify-content-center d-flex">
+                <div class="dev_button_outer justify-content-center d-flex b">
+                    <div class="dev_button_inner align-middle b">
+                        PHOTOSHOP
+                    </div>
+                </div>
+            </div>
+            <div class="col justify-content-center d-flex">
+                <div class="dev_button_outer justify-content-center d-flex c">
+                    <div class="dev_button_inner align-middle c">
+                        3DS MAX
+                    </div>
+                </div>
+            </div>
+            <div class="col justify-content-center d-flex align-middle">
+                <div class="dev_button_outer justify-content-center d-flex d">
+                    <div class="dev_button_inner align-middle d">
+                        GAMEMAKER STUDIO
+                    </div>
+                </div>
+            </div>
+            <div class="col justify-content-center d-flex">
+                <div class="dev_button_outer justify-content-center d-flex e">
+                    <div class="dev_button_inner align-middle e">
+                        PERLENSPIEL
+                    </div>
+                </div>
+            </div>
+            <div class="col justify-content-center d-flex">
+                <div class="dev_button_outer justify-content-center d-flex f">
+                    <div class="dev_button_inner align-middle f">
+                        UNREAL
+                    </div>
+                </div>
+            </div>
+            <div class="col justify-content-center d-flex">
+                <div class="dev_button_outer justify-content-center d-flex g">
+                    <div class="dev_button_inner align-middle g">
+                        C#
+                    </div>
+                </div>
+            </div>
+            <div class="col justify-content-center d-flex">
+                <div class="dev_button_outer justify-content-center d-flex h">
+                    <div class="dev_button_inner align-middle h">
+                        AESPRITE
+                    </div>
+                </div>
+            </div>
+            <div class="col justify-content-center d-flex">
+                <div class="dev_button_outer justify-content-center d-flex b">
+                    <div class="dev_button_inner align-middle b">
+                        TORTOISE
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                
+       
+        <div class="row">
+            <div class="col-md-6">
+                <div class="skills-sub-titles-small">
+                    knowledge
+                </div>
+                <ul class="skills-list">
+                    <li>Creativity</li>
+                    <li>Storytelling ability</li>
+                    <li>Knowledge of multimedia development software</li>
+                    <li>Programming knowledge</li>
+                </ul>
+            </div>
+            
+            <div class="col">
+            <div class="skills-sub-titles-small">
+                Design
+            </div>
+                <ul class="skills-list">
+                    <li>A passion for video games</li>
+                    <li>Strong analytical frame of mind</li>
+                    <li>Ability to work as part of a team</li>
+                    <li>Artistic vision</li>
+                    <li>Wide-ranging knowledge of gaming trends</li>
+                </ul>
+            </div>
+        </div>       
+    </div>
+</div>
+</div>
+
+</div>
+
+    <div class="container-fluid professional_experience_all">
+        <div class="professional_experience-title" id="proExp">Professional Experience.</div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-4 justify-content-center d-flex">
+                <div class="card">
+                    <img src="https://i.ibb.co/zx1Lw72/supersmash.jpg" alt="supersmash" style="width:100%">
+                    <div class="professional_container">
+                      <h4 class="professional_text_smash"><b>Super Smash Bros. Ultimate</b></h4> 
+                      <p class="professional_text">I worked as a system debug tester for the 5th and final downloadable character, 
+                          Byleth, from the Fighters Pass Vol. 1. For this project we mainly focused on 
+                          issues that could happen with the character, Byleth, and his/her stage. Also, 
+                          I was personally in charge of performing a system check for each new build we 
+                          received, to ensure the system was stable and all character behaved correctly.</p> 
+                    </div>
+                  </div>
+                </div>
+
+            <div class="col-md-4 justify-content-center d-flex">
+                <div class="card">
+                    <img src="https://i.ibb.co/1GbhFSW/zelda.jpg"  alt="zelda" style="width:100%">
+                    <div class="professional_container">
+                      <h4 class="professional_text_smash"><b>Legend of Zelda: Link’s Awakening</b></h4> 
+                      <p class="professional_text">A remake of the original gameboy game, released on the 
+                          Nintendo Switch. I worked as a system debug tester, looking for any kind of issue 
+                          that could hinder gameplay or cause the system to crash.</p> 
+                    </div>
+                  </div>
+                </div>
+
+            <div class="col-md-4 justify-content-center d-flex">
+                <div class="card">
+                    <img src="https://i.ibb.co/20271gZ/fireemblem.jpg" alt="fireemblem" style="width:100%">
+                    <div class="professional_container">
+                      <h4 class="professional_text_smash"><b>Fire Emblem: Three Houses</b></h4> 
+                      <p class="professional_text">The first entry of the Fire Emblem series on the Nintendo Switch. 
+                          I was a game tester that specialized in text check. This included searching for spelling 
+                          and grammatical errors, as well as context and story inconsistencies.</p> 
+                    </div>
+                  </div>
+                </div>
+ 
+            <div class="col-md-4 justify-content-center d-flex">
+                <div class="card">
+                    <img src="https://i.ibb.co/rwrNdd3/rift-heros.jpg"  alt="Rift Heroes" style="width:100%">
+                    <div class="professional_container">
+                      <h4 class="professional_text_smash"><b>Rift Heroes</b></h4> 
+                      <p class="professional_text">Rift Heroes is a fighting game that was released on the Fireshark 
+                          Theater version 2. I was in charge of finalizing the all the characters, their movesets, 
+                          and balancing. Once the game was near release, I set up play test sessions, gathered data 
+                          and made any changes that were needed.</p> 
+                    </div>
+                  </div>
+                </div>
+
+            <div class="col-md-4 justify-content-center d-flex">
+                <div class="card">
+                    <img src="https://i.ibb.co/12yysK3/wreckedmapoverview.png" alt="wrecked3d" style="width:100%">
+                    <div class="professional_container">
+                      <h4 class="professional_text_smash"><b>Wreck3d</b></h4> 
+                      <p class="professional_text">This is second game to be released on the Fireshark Theater. This 
+                          is a racing game that allowed the players to race on the floor and walls and had multiple 
+                          game modes. I selected all the vehicles and tuned their stats. I assisted in finalizing the 
+                          different game modes and stages.</p> 
+                    </div>
+                  </div>
+                </div>
+
+            <div class="col-md-4 justify-content-center d-flex">
+                <div class="card">
+                    <img src="https://i.ibb.co/2kQ3bhG/mech-mayhemjpg.jpg" alt="mech mayhem" style="width:100%">
+                    <div class="professional_container">
+                        <h4 class="professional_text_smash"><b>Mech Mayhem</b></h4> 
+                        <p class="professional_text">The flagship game that was released on the Fireshark Theater. This 
+                            is a battle arena game that included 7 different mechs with 3 different game styles. I helped 
+                            in balancing the mechs and overall quality assurance of the game.</p> 
+                    </div>
+                    </div>
+                </div>
+
+        </div>
+ 
+    </div>
+</div>
+
+
+
+
+    <!---------- PANEL #4----------->
+    <div class="panel4_wrapper">
+        <div class="panel4"></div>
+        <div class="panel4-overlap"></div>
+    </div>
+    <div class="experience-title" id="exp">Experience.</div>
+    <div class="start_timeline container-fluid">
+        <div class="start_title">Start</div>   
+    </div>
+    <div class="timeline">
+        <div class="blurb left">
+        <div class="content">
+            <h2>2013</h2>
+            <p><strong>Bachelor of Science in Game Design</strong></p>
+            <p>Graduated from <a href="https://www.fullsail.edu/">Full Sail University</a>, Winter Park, FL as <strong>Salutatorian</strong> and with a 3.9 GPA.</p>
+        </div>
+        </div>
+        <div class="blurb right">
+        <div class="content">
+            <h2>2011 - 2015</h2>
+            <p><strong>Technical Support @ CRU DataPort</strong></p>
+            <p>Worked for <a href="https://www.cru-inc.com/products/dataport/?family_name=DataPort%2025">CRU DataPort</a> in Wichita, KS from November 2011 through April 2015.</p>
+        </div>
+        </div>
+        <div class="blurb left">
+        <div class="content">
+            <h2>2015 - 2017</h2>
+            <p><strong>Primary Designer @ Fireshark Studios</strong></p>
+            <p>Worked for <a href="https://www.firesharkstudio.com/">Fireshark Studios</a>, Wichita, KS from February 2015 through April 2017.</p>
+            <ul>
+                <li>Released 3 digital games in the battle arena, fighting and racing genres using Unity</li>
+                <li>Assisted in programming (C#), level design and game mechanics development</li>
+                <li>Partnered with creative team to develop, prototype and play test new games</li>
+                <li>Set up playtest sessions then recorded and presented data to development team</li>
+                <li>Balanced content to create fun and fair gameplay</li>
+            </ul>
+        </div>
+        </div>
+        <div class="blurb right">
+            <div class="content">
+                <h2>2018</h2>
+                <p><strong>Technical Specialist @ Smartsheet</strong></p>
+                <p>Technical Support Specialist at <a href="https://www.smartsheet.com/">Smartsheet</a> from November 2018 through January 2019.</p>
+            </div>
+        </div>
+        <div class="blurb left">
+            <div class="content">
+                <h2>2019</h2>
+                <p><strong>Game Debug Tester @ Nintendo of America</strong></p>
+                <p>Worked for <a href="https://www.nintendo.com/">Nintendo of America</a>, Redmond, WA from January 2019 to March 2020</p>
+                <ul>
+                    <li>Partnered with localization team to review game text and audio voice</li>
+                    <li>Ensure quality control by testing and verifying game defects</li>
+                    <li>Collaborate with team to resolve debug issues</li>
+                    <li>Generate bug reports and track defects through proprietary software</li>
+                    <li>Applied open exploratory and situational practices for testing</li>
+                    <li>Shipped titles:
+                        <ul>
+                            <li><strong>“Super Smash Bros. Unlimited”, 5th DLC</strong></li>
+                            <li><strong>“Legend of Zelda: Link’s Awakening”</strong></li>
+                            <li><strong>“Fire Emblem: Three Houses”</strong></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="blurb right">
+            <div class="content">
+                <h2>2019</h2>
+                <p><strong>IT Foundations</strong></p>
+                <p>Continued Education as a <a href="https://itconnect.uw.edu/work/enterprise-architecture/resources/foundations/">UW Professional</a> in IT Foundations.</p>
+            </div>
+        </div>
+        <div class="blurb left">
+            <div class="content">
+                <h2>2020</h2>
+                <p><strong>QA Tester @ Keywords Studios</strong></p>
+                <p>QA Tester at <a href="https://www.keywordsstudios.com/">Keywords Studios</a> from February to July 2020.</p>
+            </div>
+        </div>
+        <div class="blurb right">
+            <div class="content">
+                <h2>2020</h2>
+                <p><strong>Game Tester @ Microsoft</strong></p>
+                <p>Game Tester Tier 3 at <a href="https://www.microsoft.com/en-us/">Microsoft</a> from July to November 2020.</p>
+            </div>
+        </div>
+        <div class="blurb left">
+            <div class="content">
+                <h2>2021</h2>
+                <p><strong>Software Test Engineer @ Turn 10 Studios</strong></p>
+                <p>Software Test Engineer at <a href="https://turn10studios.com/">Turn 10 Studios</a> from July 2021 to present.</p>
+            </div>
+        </div>
+    </div>
+    <i class="fa fa-arrow-circle-o-down fa-5x"></i>
+
+    <!---------- PANEL #5----------->
+    <div class="panel5_wrapper">
+        <div class="panel5"></div>
+        <div class="panel5-overlap"></div>
+    </div>
+
+    <div class="experience-title" id="work">Some of my work.</div>
+    <!-- CAROUSEL -->
+    <div class="gameboy container-fluid">
+        <div class="gameboy-front">
+            <div class="row">
+                <!-- THE LEFTSIDE OF GAMEBOY SCREEN -->
+                <div class="col-sm-2 d-flex align-items-center">
+                    <div class="big-leftside">
+                        <div class="row">                        
+                            <div class="col d-flex align-items-center">
+                                <div class="vertical-btn"></div>
+                            </div>      
+                            <div class="speaker-container">
+                                <div class="col-sm-12 d-flex align-items-center">
+                                    <div class="speaker-dot"></div>
+                                    <div class="speaker-dot"></div>
+                                    <div class="speaker-dot"></div>
+                                </div>
+                                <div class="col-sm-12 d-flex align-items-center">
+                                    <div class="speaker-dot"></div>
+                                    <div class="speaker-dot"></div>
+                                    <div class="speaker-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- THE GAMEBOY SCREEN -->
+                <div class="col-sm-8 d-flex align-items-center">
+                    <div class="gameboy-screen">
+                        <!-- CAROUSEL SCREEN/IMAGES -->
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="https://i.postimg.cc/Xq64QrBV/shooterx2-main.png" 
+                                    onclick="document.getElementById('carousel-shooterx2').style.display='block'"
+                                    class="d-block w-100" 
+                                    alt="shooterx2 prototype">
+                                <div class="carousel-caption d-none d-sm-block">
+                                  <h5>ShooterX2</h5>
+                                  <p>Prototype for a shoot’em up type game, where enemies comes from top and bottom while the player stays in
+                                       the center, only moving left and right and can shoot up or down.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://i.postimg.cc/PrqqCwHD/market-mayhem-main.png" 
+                                    class="d-block w-100" 
+                                    alt="Market Mayhem" 
+                                    onclick="document.getElementById('carousel-market').style.display='block'">
+                                <div class="carousel-caption d-none d-sm-block">
+                                  <h5>Market Mayhem</h5>
+                                  <p>This is the beginning stages of a design document for a game idea I have. Before I start to prototype 
+                                      my game ideas I like to get a brief overview description basic things I would like in the game.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://i.postimg.cc/Sx1r88Hz/wrecked3d-main.png" 
+                                    class="d-block w-100" 
+                                    alt="wrecked3d-prototype"
+                                    onclick="document.getElementById('carousel-wrecked').style.display='block'">>
+                                <div class="carousel-caption d-none d-sm-block">
+                                  <h5>Wrecked 3d</h5>
+                                  <p>This race course was created for a game mode in Wreck3d. For this game mode the players 
+                                      would race to a waypoint. The first one there would get a point and a new waypoint would appear. 
+                                      After many iterations the game mode became know as Pizza Delivery, where players would need to go to
+                                       the center of the map to pick up a pizza and deliver it to whichever house the waypoint was at.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button> -->
+                          </div>
+                          <div class="small-gameboy">
+                              <div class="row">
+                                  <div class="col d-flex align-items-center">
+                                        <div class="small-vertical-btn"></div>
+                                  </div>
+                                  <div class="col d-flex align-items-center">
+                                      <!-- <div class="row"> -->
+                                        <div class="small-start-button"></div>
+                                        <div class="small-start-button-text">start</div>
+                                        <div class="small-reset-button"></div>
+                                        <div class="small-reset-button-text">reset</div>
+                                      <!-- </div> -->
+                                      <!-- <div class="row">
+                                        
+                                      </div> -->
+                                  </div>
+                                  <div class="col d-flex align-items-center">
+                                    <!-- <div class="small-button-bcg"></div> -->
+                                    <div class="small-button-containers">
+                                        
+                                        <div class="small-button-a" data-bs-target="#carouselExampleCaptions" onmouseover="" style="cursor: pointer;" data-bs-slide="prev">
+                                            A
+                                        </div>
+                                        <div class="small-button-b"  data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style="cursor: pointer;" data-bs-slide="prev">B</div>
+                                    </div>
+                                    <div class="small-speaker-container">
+                                        <div class="speaker-dot"></div>
+                                        <div class="speaker-dot"></div>
+                                        <div class="speaker-dot"></div>
+                                    </div>
+                                    <div class="small-speaker-container1">
+                                        <div class="speaker-dot"></div>
+                                        <div class="speaker-dot"></div>
+                                        <div class="speaker-dot"></div>
+                                    </div>
+                                    <div class="small-speaker-container2">
+                                        <div class="speaker-dot"></div>
+                                        <div class="speaker-dot"></div>
+                                        <div class="speaker-dot"></div>
+                                    </div>
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 d-flex align-items-center">
+                    <div class="big-rightside">
+                        <div class="row">
+                            <div class="col d-flex align-items-center">
+                                
+                                <div class="button-a" data-bs-target="#carouselExampleCaptions" onmouseover="" style="cursor: pointer;" data-bs-slide="prev">
+                                    A
+                                    <div class="tooltiptext1">CLICK ME</div>
+                                </div>
+                                <div class="button-b"  data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style="cursor: pointer;" data-bs-slide="prev">B</div>
+                            </div>
+                            <div class="col-sm-12 d-flex align-items-center">
+                                <div class="start-button"></div>
+                                <div class="reset-button"></div>
+                            </div>
+                            <div class="col-sm-12 d-flex align-items-center">
+                                <div class="start-button-text">start</div>
+                                <div class="reset-button-text">reset</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <!---------- CAROUSEL MODALS ----------->
+        <!-- CAROUSEL: SHOOTERX2 MODAL-->
+        <div id="carousel-shooterx2" class="w3-modal">
+            <div class="w3-modal-content gamemodal">
+            <div class="w3-container modal-container">
+                <div class="modal-container-content">
+                    <span onclick="document.getElementById('carousel-shooterx2').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <div class="game-title">SHOOTER X2</div>
+                    <div class="game modal-container-content-scroll">
+                        <div class="game-title-description">Overview</div>
+                        <div class="game-description">Prototype for a shoot’em up type game, where enemies comes from top and bottom while the player stays in
+                            the center, only moving left and right and can shoot up or down.
+                        </div>
+                            
+                        <div class="game-title-description">PROTOTYPE</div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/FHz5byCy/shooterx2.png">
+                                        <img src="https://i.postimg.cc/FHz5byCy/shooterx2.png" alt="shooterX2 game" style="width:300px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/Cx2ycR9W/shooterx2-02.png">
+                                        <img src="https://i.postimg.cc/Cx2ycR9W/shooterx2-02.png" alt="shooterX2-gameplay" style="width:300px">
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- CAROUSEL: MARKET MAYHEM MODAL-->
+        <div id="carousel-market" class="w3-modal">
+            <div class="w3-modal-content gamemodal">
+            <div class="w3-container modal-container">
+                <div class="modal-container-content">
+                    <span onclick="document.getElementById('carousel-market').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <div class="game-title">MARKET MAYHEM</div>
+                    <div class="game modal-container-content-scroll">
+                        <div class="game-title-description">Overview</div>
+                        <div class="game-description">The player is shopping to collect everything on their list. While doing so they must deal with 
+                            the horrible handling of the shopping cart and annoying customers that get in the way. This takes 
+                            place in a top-down view. However, if the player runs into another customer the game's view and game
+                             type changes to a 2D fighting game. In this mode the player is taking on the customer they just ran
+                              into in a simplistic fighting game. The goal for each stage is to complete your shopping list within
+                               a certain time limit. Each subsequent stage will create a new list with more items. After approx 5 
+                               stages, a new level layout will be presented. Such as, the first 5 stages the player is in a mini 
+                               mart and the next level would introduce a grocery store/market. The final level could be a super store.
+                        </div>
+
+                        <div class="game-title-description">Goal</div>
+                        <div class="game-description">Gather all the items on the shopping list within the time limit.</div>
+
+                        <div class="game-title-description">Top-down Shopping</div>
+                        <div class="game-description">Zelda dungeon-esque view style top-down. Shopping list on the left side of the screen, a quarter of the 
+                            screen (maybe less). The rest of the screen is dedicated to the shop. The basic layout of the shop will 
+                            remain the same for each level, the items that need to be collected change from stage to stage. The player
+                             can move around and have a button to dash. (Change) Make the Shopping list translucent and let the player
+                              toggle it with a push of a button.
+                        </div>
+
+                        <div class="game-title-description">2D Fighting</div>
+                        <div class="game-description">Side view. HUD will have a player avatar’s face and hearts for hit points. One heart for each HP. The player 
+                        can move left, right and duck. Player actions are attack, block and throw. Throw can only be used if the player
+                         has picked up items. If the player has an item the items will appear as small icons under the avatar’s face and 
+                         hearts. Whichever items are thrown need to be recollected, once back in shopping mode.</div>
+                            
+                        <div class="game-title-description">PROTOTYPE</div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/FRD76gm9/image-2.png">
+                                        <img src="https://i.postimg.cc/FRD76gm9/image-2.png" alt="marketmayhem game" style="width:300px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/j22LYwdy/image-3-1.png">
+                                        <img src="https://i.postimg.cc/j22LYwdy/image-3-1.png" alt="2dfighting marketmayhem" style="width:300px">
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- CAROUSEL: WRECKED3D MODAL-->
+        <div id="carousel-wrecked" class="w3-modal">
+            <div class="w3-modal-content gamemodal">
+            <div class="w3-container modal-container">
+                <div class="modal-container-content">
+                    <span onclick="document.getElementById('carousel-wrecked').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <div class="game-title">WRECKED3D</div>
+                    <div class="game modal-container-content-scroll">
+                        <div class="game-title-description">Overview</div>
+                        <div class="game-description">This race course was created for a game mode in Wreck3d. For this game mode the players
+                             would race to a waypoint. The first one there would get a point and a new waypoint would appear. After many iterations 
+                             the game mode became know as Pizza Delivery, where players would need to go to the center of the map to pick up a pizza 
+                             and deliver it to whichever house the waypoint was at.
+                        </div>
+
+                        <div class="game-title-description">PROTOTYPE</div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/7hQvjbfG/racemap01wl.png">
+                                        <img src="https://i.postimg.cc/7hQvjbfG/racemap01wl.png" alt="wrecked3d prototype" style="width:300px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.ibb.co/12yysK3/wreckedmapoverview.png">
+                                        <img src="https://i.ibb.co/12yysK3/wreckedmapoverview.png" alt="wrecked3d" style="width:300px">
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+       <!---------- PANEL #6----------->
+    <div class="panel6_wrapper">
+        <div class="panel6"></div>
+        <div class="panel6-overlap"></div>
+    </div>
+    <div class="skills-title" id="games">More Projects.</div>
+    <div class="projects-container container-fluid">
+        <div class="projects-grid container">
+            <div class="row">
+                <div class="cartidge-container col justify-content-center d-flex"  onclick="document.getElementById('id01').style.display='block'">
+                    <div class="cartidge-indent"></div>
+                    <div class="cartidge">
+                        <div class="cartidge-label">
+                            <img src="https://i.postimg.cc/Y9CBV7Y7/bobgohomegametitle.png" />
+                            <div class="cartidge-text">BOB GO HOME</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartidge-container col justify-content-center d-flex" onclick="document.getElementById('id02').style.display='block'">
+                    <div class="cartidge-indent"></div>
+                    <div class="cartidge">
+                        <div class="cartidge-label">
+                            <img src="https://i.postimg.cc/kGN2FZ6L/nyxkairos01.jpg" />
+                            <!-- <div class="cartidge-text">
+                                NYX’ KAIROS
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="cartidge-container col justify-content-center d-flex" onclick="document.getElementById('id03').style.display='block'">
+                    <div class="cartidge-indent"></div>
+                    <div class="cartidge">
+                        <div class="cartidge-label">
+                            <img src="https://i.postimg.cc/HLCvx80z/cosmonautsprite01.png" />
+                            <div class="cartidge-text">Falling for Putin</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartidge-container col justify-content-center d-flex" onclick="document.getElementById('id04').style.display='block'">
+                    <div class="cartidge-indent"></div>
+                    <div class="cartidge">
+                        <div class="cartidge-label">
+                            <img src="https://i.postimg.cc/yY2fd1wL/gamelogo.png" />
+                            <!-- <div class="cartidge-text">Floppy Pixels</div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="cartidge-container col justify-content-center d-flex" onclick="document.getElementById('id05').style.display='block'">
+                    <div class="cartidge-indent"></div>
+                    <div class="cartidge">
+                        <div class="cartidge-label">
+                            <img src="https://i.postimg.cc/vHpzMGjb/faint02.png" />
+                            <div class="cartidge-text note_shredder">
+                                Note Shredder
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartidge-container col justify-content-center d-flex" onclick="document.getElementById('id06').style.display='block'">
+                    <div class="cartidge-indent"></div>
+                    <div class="cartidge">
+                        <div class="cartidge-label">
+                            <img src="https://i.postimg.cc/T3tH6zr9/7minutesmainmenu.png" />
+                            <!-- <div class="cartidge-text minutes">7 Minutes to ______ the World</div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="cartidge-container col justify-content-center d-flex" onclick="document.getElementById('id07').style.display='block'">
+                    <div class="cartidge-indent"></div>
+                    <div class="cartidge">
+                        <div class="cartidge-label">
+                            <img src="https://i.postimg.cc/0jvLQprd/screen-shot-2013-01-30-at-9-43-16-pm.png" />
+                            <div class="cartidge-text shooterX">
+                                ShooterX
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartidge-container col justify-content-center d-flex" onclick="document.getElementById('id08').style.display='block'">
+                    <div class="cartidge-indent"></div>
+                    <div class="cartidge">
+                        <div class="cartidge-label">
+                            <img src="https://i.postimg.cc/GtkTP1Ln/fps.jpg" />
+                            <div class="cartidge-text">
+                                Escape the <p>Rock</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartidge-container col justify-content-center d-flex" onclick="document.getElementById('id09').style.display='block'">
+                    <div class="cartidge-indent"></div>
+                    <div class="cartidge">
+                        <div class="cartidge-label">
+                            <img src="https://i.postimg.cc/15GYXnZJ/uprising-1.jpg" />
+                            <div class="cartidge-text uprising">
+                                Uprising
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------- MORE PROJECTS MODAL ----------->
+        <!-- GAME 1 : BOB GO HOME-->
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content gamemodal">
+            <div class="w3-container modal-container">
+                <div class="modal-container-content">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <div class="game-title">Bob go home</div>
+                    <div class="game modal-container-content-scroll">
+                        <div class="game-title-description">About</div>
+                        <div class="game-description">I had to create a 5 minute intro to a game 
+                            for a class I took, Aesthetics and Immersions. I made a demo of this 
+                            game with Game Maker: Studio. All the artwork was hand drawn and edited 
+                            in Photoshop.
+                        </div>
+
+                        <div class="game-title-description">Gameplay</div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/Y9CBV7Y7/bobgohomegametitle.png">
+                                        <img src="https://i.postimg.cc/Y9CBV7Y7/bobgohomegametitle.png" alt="bobgohomegametitle" style="width:150px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/tJL0YVfR/bobgohomemainmenu.png">
+                                        <img src="https://i.postimg.cc/tJL0YVfR/bobgohomemainmenu.png" alt="bobgohomemainmenu" style="width:150px">
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/d0vY2r0L/screen-shot-2013-01-30-at-10-54-53-pm.png">
+                                        <img src="https://i.postimg.cc/d0vY2r0L/screen-shot-2013-01-30-at-10-54-53-pm.png" alt="bobgohome screenshot1" style="width:150px">
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/6q7JWhM1/screen-shot-2013-01-30-at-10-56-03-pm.png">
+                                        <img src="https://i.postimg.cc/6q7JWhM1/screen-shot-2013-01-30-at-10-56-03-pm.png" alt="bobgohome screenshot2" style="width:150px">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- GAME 1 : BOB GO HOME ARTWORK -->
+                        <div class="game-title-description">VIDEO DEMO</div>
+                        <div class="youtube-video-container" id="player">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/zx-0QtN07tI" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        
+                    <!-- GAME 1 : BOB GO HOME ARTWORK -->
+                        <div class="game-title-description">Artwork</div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/nLtH3N3V/bobgohome01.jpg">
+                                        <img src="https://i.postimg.cc/nLtH3N3V/bobgohome01.jpg" alt="bobgohome01" style="width:150px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/HL4TR3Nw/bobgohome02f.jpg">
+                                        <img src="https://i.postimg.cc/HL4TR3Nw/bobgohome02f.jpg" alt="bobgohome02f" style="width:150px">
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/pr7vzS9H/bobgohome03f.jpg">
+                                        <img src="https://i.postimg.cc/pr7vzS9H/bobgohome03f.jpg" alt="bobgohome03f" style="width:150px">
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/fLzMNm46/bobgohome04f.jpg">
+                                        <img src="https://i.postimg.cc/fLzMNm46/bobgohome04f.jpg" alt="bobgohome04f" style="width:150px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/HscddTKs/bobgohome05f.jpg">
+                                        <img src="https://i.postimg.cc/HscddTKs/bobgohome05f.jpg" alt="bobgohome05f" style="width:150px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/pTsRXrRy/bobgohome06f.jpg">
+                                        <img src="https://i.postimg.cc/pTsRXrRy/bobgohome06f.jpg" alt="bobgohome06f" style="width:150px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/VLx1N3Q9/bobgohome07f.jpg">
+                                        <img src="https://i.postimg.cc/VLx1N3Q9/bobgohome07f.jpg" alt="bobgohome07f" style="width:150px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/J0tmy8zx/bobgohome08f.jpg">
+                                        <img src="https://i.postimg.cc/J0tmy8zx/bobgohome08f.jpg" alt="bobgohome08f" style="width:150px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/RCb4kWgD/bobgohome09f.jpg">
+                                        <img src="https://i.postimg.cc/RCb4kWgD/bobgohome09f.jpg" alt="bobgohome09f" style="width:150px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/GmvRTqdW/bobgohomechar00-e1405855108819.jpg">
+                                        <img src="https://i.postimg.cc/GmvRTqdW/bobgohomechar00-e1405855108819.jpg" alt="bobgohome10" style="width:150px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/s2cRwxBK/bobgohomefin01f.jpg">
+                                        <img src="https://i.postimg.cc/s2cRwxBK/bobgohomefin01f.jpg" alt="bobgohomefin01f" style="width:150px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="game-images">
+                                    <a target="_blank" href="https://i.postimg.cc/C1rpp2sq/bobgohomefin08f1.jpg">
+                                        <img src="https://i.postimg.cc/C1rpp2sq/bobgohomefin08f1.jpg" alt="bobgohomefin01f" style="width:150px">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- GAME 2 -->
+        <div id="id02" class="w3-modal">
+            <div class="w3-modal-content gamemodal">
+                <div class="w3-container modal-container">
+                    <div class="modal-container-content">
+                        <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <div class="game-title">Nyx’ Kairos</div>
+                            <div class="game modal-container-content-scroll">
+                                <div class="game-title-description">About</div>
+                                <div class="game-description">This was a four month project that spanned over four classes, 
+                                    this was the final project. I was in charge of developing art assets, I created custom 
+                                    3D models and 2D art. The 3D models were created with 3ds Max and 2D artwork was done 
+                                    using Photoshop. We started with a game design document, then created storyboards. Once 
+                                    we were approved of the project by the instructors we continued with development. This 
+                                    game was initially a time-travel FPS but towards the second month we changed the game 
+                                    almost entirely to a time-travel puzzle game. We finished the game and it was voted 
+                                    best in class. 
+                                </div>
+                
+                                <div class="game-title-description">Gameplay</div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/kGN2FZ6L/nyxkairos01.jpg">
+                                                <img src="https://i.postimg.cc/kGN2FZ6L/nyxkairos01.jpg" alt="nyxkairos01" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/tC51sKHx/nyxkairos02.jpg">
+                                                <img src="https://i.postimg.cc/tC51sKHx/nyxkairos02.jpg" alt="nyxkairos02" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/h4VQBJyM/nyxkairos03.jpg">
+                                                <img src="https://i.postimg.cc/h4VQBJyM/nyxkairos03.jpg" alt="nyxkairos03" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/NfY9fgZt/nyxkairos04.jpg">
+                                                <img src="https://i.postimg.cc/NfY9fgZt/nyxkairos04.jpg" alt="nyxkairos04" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- GAME 2 : Nyx’ Kairos ARTWORK -->
+                                <div class="game-title-description">GAME DEMO</div>
+                                <div class="game-install">
+                                    <a href="https://www.dropbox.com/s/6o19ysi7bdddkdv/UDKInstall-NyxKairos.exe?dl=0">Download</a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GAME 3 -->
+        <div id="id03" class="w3-modal">
+            <div class="w3-modal-content gamemodal">
+                <div class="w3-container modal-container">
+                    <div class="modal-container-content">
+                        <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <div class="game-title">Falling for Putin</div>
+                        <div class="game modal-container-content-scroll">
+                            <div class="game-title-description">About</div>
+                            <div class="game-description">This game was created at a game jam. We were a 3 person team and had less 
+                                than 3 days to go from an idea to a playable game. The theme for this game jam was Useless Super 
+                                Powers. My team came up with the idea of flying downwards but at terminal velocity for a human being. 
+                                I contributed with game design, which consisted of taking all of our ideas and making them viable 
+                                game mechanics. Also, I created all of the game art. The art we made using Photoshop and the game 
+                                was built using Unity. We were one of the top contenders but ended up winning second place.
+                            </div>
+            
+                            <div class="game-title-description">Artwork</div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="game-images">
+                                        <a target="_blank" href="https://i.postimg.cc/HLCvx80z/cosmonautsprite01.png">
+                                            <img src="https://i.postimg.cc/HLCvx80z/cosmonautsprite01.png" alt="cosmonautsprite01" style="width:150px">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="game-images">
+                                        <a target="_blank" href="https://i.postimg.cc/cL350B36/aeroplane.png">
+                                            <img src="https://i.postimg.cc/cL350B36/aeroplane.png" alt="aeroplane" style="width:150px">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="game-images">
+                                        <a target="_blank" href="https://i.postimg.cc/63WHVsmG/helicopter.png">
+                                            <img src="https://i.postimg.cc/63WHVsmG/helicopter.png" alt="helicopter" style="width:150px">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="game-images">
+                                        <a target="_blank" href="https://i.postimg.cc/9ft8qXJh/cosmonautflysprite.png">
+                                            <img src="https://i.postimg.cc/9ft8qXJh/cosmonautflysprite.png" alt="cosmonautflysprite" style="width:150px">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="game-images">
+                                        <a target="_blank" href="https://i.postimg.cc/JnppPTfY/sputnik.png">
+                                            <img src="https://i.postimg.cc/JnppPTfY/sputnik.png" alt="sputnik" style="width:150px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- GAME 2 : Nyx’ Kairos ARTWORK -->
+                            <div class="game-title-description">GAME DEMO</div>
+                            <div class="game-install">
+                                <a href="https://www.dropbox.com/s/szd7c85ady9h0y9/fallin%20for%20putin.exe?dl=0">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GAME 4 -->
+        <div id="id04" class="w3-modal">
+            <div class="w3-modal-content gamemodal">
+                <div class="w3-container modal-container">
+                    <div class="modal-container-content">
+                        <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <div class="game-title">Floppy Pixels</div>
+                            <div class="game modal-container-content-scroll">
+                                <div class="game-title-description">About</div>
+                                <div class="game-description">A group of us came together for a game jam to make this game. For this game we 
+                                    had a couple of programmers, a sound designer, game designer and a graphic artist. I was the graphic artist 
+                                    as well a game designer for the team. The theme for this game jam was A Single Pixel or Wormhole. We decided 
+                                    to incorporate both themes. We developed a roguelike game in which the player is a single pixel trying to 
+                                    not be assimilated by newer more advance tech by using wormholes to out run them. Our game was a crowd 
+                                    favorite and ending up getting third place.
+                                </div>
+                
+                                <div class="game-title-description">Gameplay</div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/yY2fd1wL/gamelogo.png">
+                                                <img src="https://i.postimg.cc/yY2fd1wL/gamelogo.png" alt="gamelogo" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/SsZdpk67/goldencompy.png">
+                                                <img src="https://i.postimg.cc/SsZdpk67/goldencompy.png" alt="goldencompy" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/43gB684t/enemypunch01.png">
+                                                <img src="https://i.postimg.cc/43gB684t/enemypunch01.png" alt="enemypunch01" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- GAME 2 : Nyx’ Kairos ARTWORK -->
+                                <div class="game-title-description">GAME DEMO</div>
+                                <div class="game-install">
+                                    <a href="https://www.dropbox.com/s/gdwoewibl2i9s2s/Floppy%20Pixels.exe?dl=0">Try this out</a> and don’t get assimilated.
+                                </div>
+
+                                <div class="game-title-description">Artwork</div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/90nLyCzF/blurayplayer.png">
+                                                <img src="https://i.postimg.cc/90nLyCzF/blurayplayer.png" alt="blurayplayer" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/KYDQJn4W/cd04.png">
+                                                <img src="https://i.postimg.cc/KYDQJn4W/cd04.png" alt="cd04" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/RCsskQG5/enemyback03.png">
+                                                <img src="https://i.postimg.cc/RCsskQG5/enemyback03.png" alt="enemyback03" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/8zWZr8GN/enemyback-all.png">
+                                                <img src="https://i.postimg.cc/8zWZr8GN/enemyback-all.png" alt="enemyback" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/J72x674R/enemyfront-all.png">
+                                                <img src="https://i.postimg.cc/J72x674R/enemyfront-all.png" alt="enemyfront" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/pTVC7pFL/enemyside-all.png">
+                                                <img src="https://i.postimg.cc/pTVC7pFL/enemyside-all.png" alt="enemyside" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/fTV2Dtg3/gamecontroller.png">
+                                                <img src="https://i.postimg.cc/fTV2Dtg3/gamecontroller.png" alt="gamecontroller" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/7hfVHdXv/phone01.png">
+                                                <img src="https://i.postimg.cc/7hfVHdXv/phone01.png" alt="phone01" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/Kjw5Rfs1/phone02.png">
+                                                <img src="https://i.postimg.cc/Kjw5Rfs1/phone02.png" alt="phone02" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GAME 5 -->
+        <div id="id05" class="w3-modal">
+            <div class="w3-modal-content gamemodal">
+                <div class="w3-container modal-container">
+                    <div class="modal-container-content">
+                        <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <div class="game-title">Note Shredder</div>
+                            <div class="game modal-container-content-scroll">
+                                <div class="game-title-description">About</div>
+                                <div class="game-description">We developed this game at a game jam. This was pretty much the same team that 
+                                    I was with for Floppy Pixel. I was in charge of all the art for the game. For this game jam we created 
+                                    a rhythmic fighting game. The player had to input keys on the keyboard as the keys scrolled down with 
+                                    the beat of the music. For this game we won the most creative and ambitious award.
+                                </div>
+                
+                                <div class="game-title-description">Gameplay</div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/vHpzMGjb/faint02.png">
+                                                <img src="https://i.postimg.cc/vHpzMGjb/faint02.png" alt="faint02" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/MpVYph2R/hit-1.png">
+                                                <img src="https://i.postimg.cc/MpVYph2R/hit-1.png" alt="hit-1" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/jjT4wZt1/idle01.png">
+                                                <img src="https://i.postimg.cc/jjT4wZt1/idle01.png" alt="idle01" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GAME 6 -->
+        <div id="id06" class="w3-modal">
+            <div class="w3-modal-content gamemodal">
+                <div class="w3-container modal-container">
+                    <div class="modal-container-content">
+                        <span onclick="document.getElementById('id06').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <div class="game-title">7 Minutes to ______ the World</div>
+                            <div class="game modal-container-content-scroll">
+                                <div class="game-title-description">About</div>
+                                <div class="game-description">This was created at the ICT 2019 summer game jam. I was one of the artist, as well 
+                                    as a game designer. The theme was Start from Nothing, so we created a clicker game. As per typical clicker 
+                                    games the player starts off with nothing. The player can either choose to be evil or good by choosing to click
+                                     on doing a good or evil action. As suggested in the title of the game, you have 7 minutes to either save or 
+                                     rule the world. As the game progresses the imagery changes based off if the player is choosing a righteous 
+                                     or wicked path. We won 5th place and our game was the crowd favorite.
+                                </div>
+                
+                                <div class="game-title-description">Gameplay</div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/T3tH6zr9/7minutesmainmenu.png">
+                                                <img src="https://i.postimg.cc/T3tH6zr9/7minutesmainmenu.png" alt="7minutesmainmenu" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/25Jcqn9L/7minutesscreenshot.png">
+                                                <img src="https://i.postimg.cc/25Jcqn9L/7minutesscreenshot.png" alt="7minutesscreenshot" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/3wWfJt1H/gym.png">
+                                                <img src="https://i.postimg.cc/3wWfJt1H/gym.png" alt="gym" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="game-title-description">GAME DEMO</div>
+                                <div class="game-install">
+                                    See if you’re a hero or villain by trying our <a href="https://the-wayward-sons.itch.io/7-minutes-to-the-world">game</a>.
+                                </div>
+
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GAME 7 -->
+        <div id="id07" class="w3-modal">
+            <div class="w3-modal-content gamemodal">
+                <div class="w3-container modal-container">
+                    <div class="modal-container-content">
+                        <span onclick="document.getElementById('id07').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <div class="game-title">Shooter X</div>
+                            <div class="game modal-container-content-scroll">
+                                <div class="game-title-description">About</div>
+                                <div class="game-description">This is a game I created using Perlenspiel. Perlenspiel is a cloud-based 
+                                    HTML5 engine that uses Javascript as the programming language. It uses beads in a max of 32×32 grid. 
+                                    Shooter X is as you expect of a shooter game, where the player is a blue square that moves left and 
+                                    right and shoots up and down. Enemies come at you from the top and bottom of the screen. This game 
+                                    was developed in a week.
+                                </div>
+                
+                                <div class="game-title-description">Gameplay</div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/mDCvBdZg/screen-shot-2013-01-30-at-9-42-47-pm.png">
+                                                <img src="https://i.postimg.cc/mDCvBdZg/screen-shot-2013-01-30-at-9-42-47-pm.png" alt="shooterX screenshot1" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/0jvLQprd/screen-shot-2013-01-30-at-9-43-16-pm.png">
+                                                <img src="https://i.postimg.cc/0jvLQprd/screen-shot-2013-01-30-at-9-43-16-pm.png" alt="shooterX screenshot2" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="game-title-description">GAME DEMO</div>
+                                <div class="game-install">
+                                   <a href="https://www.dropbox.com/login?cont=https%3A%2F%2Fwww.dropbox.com%2Fhome%2FPublic%2FXShooter">Click here</a> to download the files needed 
+                                   to play the game. Place all these files in one folder and then double-click the file ending in html.
+                                </div>
+
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GAME 8 -->
+        <div id="id08" class="w3-modal">
+            <div class="w3-modal-content gamemodal">
+                <div class="w3-container modal-container">
+                    <div class="modal-container-content">
+                        <span onclick="document.getElementById('id08').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <div class="game-title">Escape the Rock</div>
+                            <div class="game modal-container-content-scroll">
+                                <div class="game-title-description">About</div>
+                                <div class="game-description">This is a game I developed with a team using UDK for Level Design 2. 
+                                    We were to build a level of a game in a month time period. My group’s idea was that of a 
+                                    prison break scenario. But instead of one simple level, we decided on pushing the envelope, 
+                                    by not just creating one level but three distinctly different ones. There was an FPS, 
+                                    Platformer and Top down. For this project I was in charge of the Platformer.
+                                </div>
+                
+                                <div class="game-title-description">Gameplay</div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/GtkTP1Ln/fps.jpg">
+                                                <img src="https://i.postimg.cc/GtkTP1Ln/fps.jpg" alt="screenshot1" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/BZDFf2x7/side.jpg">
+                                                <img src="https://i.postimg.cc/BZDFf2x7/side.jpg" alt="screenshot2 side" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/m2yFtRpQ/start.jpg">
+                                                <img src="https://i.postimg.cc/m2yFtRpQ/start.jpg" alt="screenshot3 start" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/15Qqm4Bm/top.jpg">
+                                                <img src="https://i.postimg.cc/15Qqm4Bm/top.jpg" alt="screenshot4 top" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GAME 9 -->
+        <div id="id09" class="w3-modal">
+            <div class="w3-modal-content gamemodal">
+                <div class="w3-container modal-container">
+                    <div class="modal-container-content">
+                        <span onclick="document.getElementById('id09').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <div class="game-title">Escape the Rock</div>
+                            <div class="game modal-container-content-scroll">
+                                <div class="game-title-description">About</div>
+                                <div class="game-description">This is a game I developed with a team using UDK for Level Design 2. 
+                                    We were to build a level of a game in a month time period. My group’s idea was that of a 
+                                    prison break scenario. But instead of one simple level, we decided on pushing the envelope, 
+                                    by not just creating one level but three distinctly different ones. There was an FPS, 
+                                    Platformer and Top down. For this project I was in charge of the Platformer.
+                                </div>
+                
+                                <div class="game-title-description">Gameplay</div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/j2N3zCnq/photo-1.jpg">
+                                                <img src="https://i.postimg.cc/j2N3zCnq/photo-1.jpg" alt="image1" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/QNWzLYYL/sacrifice.jpg">
+                                                <img src="https://i.postimg.cc/QNWzLYYL/sacrifice.jpg" alt="sacrifice" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/VLQVz92J/shock.jpg">
+                                                <img src="https://i.postimg.cc/VLQVz92J/shock.jpg" alt="shock" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/7Zqt2HHD/tokens.jpg">
+                                                <img src="https://i.postimg.cc/7Zqt2HHD/tokens.jpg" alt="tokens" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/15GYXnZJ/uprising-1.jpg">
+                                                <img src="https://i.postimg.cc/15GYXnZJ/uprising-1.jpg" alt="uprising" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="game-title-description">Artwork</div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/wvrnXSW2/godwing.jpg">
+                                                <img src="https://i.postimg.cc/wvrnXSW2/godwing.jpg" alt="godwing" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/vZdFSwGS/blindinglight.jpg">
+                                                <img src="https://i.postimg.cc/vZdFSwGS/blindinglight.jpg" alt="blindinglight" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/MKBJDpJQ/counterattack.jpg">
+                                                <img src="https://i.postimg.cc/MKBJDpJQ/counterattack.jpg" alt="counterattack" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/B6bd1qCt/fang.jpg">
+                                                <img src="https://i.postimg.cc/B6bd1qCt/fang.jpg" alt="fang" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/XvjM4KGf/fortificationupgrade.jpg">
+                                                <img src="https://i.postimg.cc/XvjM4KGf/fortificationupgrade.jpg" alt="fortificationupgrade" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/qBSdyCSr/gravitymachinemalfunction.jpg">
+                                                <img src="https://i.postimg.cc/qBSdyCSr/gravitymachinemalfunction.jpg" alt="gravitymachinemalfunction" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/Z5FkGsRY/handtohandtraining.jpg">
+                                                <img src="https://i.postimg.cc/Z5FkGsRY/handtohandtraining.jpg" alt="handtohandtraining" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/QM02tB1R/heatwave.jpg">
+                                                <img src="https://i.postimg.cc/QM02tB1R/heatwave.jpg" alt="heatwave" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/NFrSppSc/icekill.jpg">
+                                                <img src="https://i.postimg.cc/NFrSppSc/icekill.jpg" alt="icekill" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/NLqVVRvr/icestorm.jpg">
+                                                <img src="https://i.postimg.cc/NLqVVRvr/icestorm.jpg" alt="icestorm" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/vH5HmzBk/ladysmash.jpg">
+                                                <img src="https://i.postimg.cc/vH5HmzBk/ladysmash.jpg" alt="ladysmash" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/kg9MRbR4/lordnecroo.jpg">
+                                                <img src="https://i.postimg.cc/kg9MRbR4/lordnecroo.jpg" alt="lordnecroo" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/jSXxHSyh/luminista.jpg">
+                                                <img src="https://i.postimg.cc/jSXxHSyh/luminista.jpg" alt="luminista" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/637BxVgH/obsidian.jpg">
+                                                <img src="https://i.postimg.cc/637BxVgH/obsidian.jpg" alt="obsidian" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/DfJw9FK2/pittrap.jpg">
+                                                <img src="https://i.postimg.cc/DfJw9FK2/pittrap.jpg" alt="pittrap" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/zDsG5MJT/runningshoes.jpg">
+                                                <img src="https://i.postimg.cc/zDsG5MJT/runningshoes.jpg" alt="runningshoes" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/MGpWdJDJ/sacrifice.jpg">
+                                                <img src="https://i.postimg.cc/MGpWdJDJ/sacrifice.jpg" alt="sacrifice" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/259Ct9cb/shock.jpg">
+                                                <img src="https://i.postimg.cc/259Ct9cb/shock.jpg" alt="shock" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/2yhmVkzh/siegetechupgrade.jpg">
+                                                <img src="https://i.postimg.cc/2yhmVkzh/siegetechupgrade.jpg" alt="siegetechupgrade" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/wT5gzj4d/stonehedge.jpg">
+                                                <img src="https://i.postimg.cc/wT5gzj4d/stonehedge.jpg" alt="stonehedge" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/2jZCHw4y/strangebluefog.jpg">
+                                                <img src="https://i.postimg.cc/2jZCHw4y/strangebluefog.jpg" alt="strangebluefog" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/YqBMTW33/targetpractice.jpg">
+                                                <img src="https://i.postimg.cc/YqBMTW33/targetpractice.jpg" alt="targetpractice" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/mg84c6GX/thrifter.jpg">
+                                                <img src="https://i.postimg.cc/mg84c6GX/thrifter.jpg" alt="thrifter" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/HxfdYcCT/trapbackfire.jpg">
+                                                <img src="https://i.postimg.cc/HxfdYcCT/trapbackfire.jpg" alt="trapbackfire" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/jSsKSYBn/uprising.jpg">
+                                                <img src="https://i.postimg.cc/jSsKSYBn/uprising.jpg" alt="uprising" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/6QPNc2qC/uprising-2.jpg">
+                                                <img src="https://i.postimg.cc/6QPNc2qC/uprising-2.jpg" alt="uprising2" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/j5JYFxnm/uprising-3.jpgg">
+                                                <img src="https://i.postimg.cc/j5JYFxnm/uprising-3.jpgg" alt="uprising3" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="game-images">
+                                            <a target="_blank" href="https://i.postimg.cc/nrbf8yvz/zumzum.jpg">
+                                                <img src="https://i.postimg.cc/nrbf8yvz/zumzum.jpg" alt="zumzum" style="width:150px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!---------- PANEL #6----------->
+    <div class="panel7_wrapper">
+        <div class="panel7"></div>
+        <div class="panel7-overlap"></div>
+    </div>
+    <div class="container-fluid">
+        <div class="row contactme-row">
+            <div class="col-md-6 col-xs-12">
+                <div class="contact-title-small" id="contactme">Contact Me.</div>
+                <div class="arcade-container container-fluid">
+                    <!-- <img class="arcade-screen-image" src="https://media.giphy.com/media/3o6UBpHgaXFDNAuttm/giphy.gif"> -->
+                    <img class="arcade-svg" src="images/arcade-vector-krita.png" />
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="contact-title" id="contactme">Contact Me.</div>
+                <div class="contact-description">Interested in collaborating or have questions on what I've done?
+                    Send me an email and I'd be happy to connect. 
+                </div>
+                <div class="message-form-bcg">
+                    <form method="POST" class="message-form" name="rafi-submit-email">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="rafi-submit-email" name="email" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating message">
+                            <textarea class="form-control" placeholder="Leave a comment here" name="message" id="floatingTextarea" style="height: 100px"></textarea>
+                            <label for="floatingTextarea">Message</label>
+                        </div>
+                        <input class="message-button" type="submit" name="submit" value="Send"/>
+                    </form>
+                </div>
+
+                <!--CONTACTS AND MADE BY TEAMLUMPIA-->
+                <div class="footer">
+                    <a class="footer-link" href="mailto:rafirjames@gmail.com"><i class="fa fa-envelope-square" id="footer-icons"></i></a>
+                    <a class="footer-link" href="https://www.linkedin.com/in/rafi-james/"><i class="fa fa-linkedin-square" id="footer-icons"></i></a>
+                    <a class="footer-link" href="https://www.facebook.com/rafi.james.94"><i class="fa fa-facebook-square" id="footer-icons"></i></a>
+                    <a class="footer-link" href="https://www.instagram.com/"><i class="fa fa-instagram" id="footer-icons"></i></a>
+                    <a class="footer-link" href="https://twitter.com/RafiJames"><i class="fa fa-twitter-square" id="footer-icons"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="teamlumpia">MADE WITH ❤️ BY <a href="https://teamlumpia.com/">TEAMLUMPIA</a></div>
+
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        -->
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz0JUwT370QrEpGx1mGa9naekvncygPwFJspVuoNvbSD6DnQXm1A0DbA5XYradJ1YxC/exec';
+            const form = document.forms['rafi-submit-email']
+    
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)})
+                        .then(response => console.log('Success!', form.reset(), alert('Thank you for the message! Will contact you soon!')))
+                        .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+</body>
+</html>
