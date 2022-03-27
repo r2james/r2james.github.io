@@ -88,7 +88,8 @@
         <div class="about container-fluid">
             <div class="row justify-content-center">
                 <div class="col-sm d-flex align-items-center">
-                    <p class="about_text mx-auto">
+                    <div class="about_text_move ">
+                    <p class="about_text mx-auto ">
                         <strong>
                             I'm a design-minded, Game Designer that has been a part 
                             of the Game indsutry for 8+ years. Join me on a journey 
@@ -110,6 +111,7 @@
                         projects.  Check out what some of the work I've done and feel free to reach out to me via 
                         social media regarding collabs or out of curiosity.
                     </p> -->
+                    </div>
                 </div>
                 <div class="col-sm d-flex align-items-center">
                     <img class="about-photo mx-auto" src="images/Rafi_placeholder.jpg"/>
@@ -637,8 +639,8 @@
                                     class="d-block w-100" 
                                     alt="shooterx2 prototype">
                                 <div class="carousel-caption d-none d-sm-block">
-                                  <h5>ShooterX2</h5>
-                                  <p>Prototype for a shoot’em up type game, where enemies comes from top and bottom while the player stays in
+                                  <h5 class="c-captions">ShooterX2</h5>
+                                  <p class="c-captions">Prototype for a shoot’em up type game, where enemies comes from top and bottom while the player stays in
                                        the center, only moving left and right and can shoot up or down.</p>
                                 </div>
                               </div>
@@ -648,8 +650,8 @@
                                     alt="Market Mayhem" 
                                     onclick="document.getElementById('carousel-market').style.display='block'">
                                 <div class="carousel-caption d-none d-sm-block">
-                                  <h5>Market Mayhem</h5>
-                                  <p>This is the beginning stages of a design document for a game idea I have. Before I start to prototype 
+                                  <h5 class="c-captions">Market Mayhem</h5>
+                                  <p class="c-captions">This is the beginning stages of a design document for a game idea I have. Before I start to prototype 
                                       my game ideas I like to get a brief overview description basic things I would like in the game.</p>
                                 </div>
                               </div>
@@ -659,8 +661,8 @@
                                     alt="wrecked3d-prototype"
                                     onclick="document.getElementById('carousel-wrecked').style.display='block'">>
                                 <div class="carousel-caption d-none d-sm-block">
-                                  <h5>Wrecked 3d</h5>
-                                  <p>This race course was created for a game mode in Wreck3d. For this game mode the players 
+                                  <h5 class="c-captions">Wrecked 3d</h5>
+                                  <p class="c-captions">This race course was created for a game mode in Wreck3d. For this game mode the players 
                                       would race to a waypoint. The first one there would get a point and a new waypoint would appear. 
                                       After many iterations the game mode became know as Pizza Delivery, where players would need to go to
                                        the center of the map to pick up a pizza and deliver it to whichever house the waypoint was at.</p>
@@ -1916,6 +1918,19 @@
                         .then(response => console.log('Success!', form.reset(), alert('Thank you for the message! Will contact you soon!')))
                         .catch(error => console.error('Error!', error.message))
             })
+
+            // TO HIDE NAVBAR
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("nav").style.bottom = "0";
+            } else {
+                document.getElementById("nav").style.bottom = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+            }
+
         </script>
 </body>
 </html>
